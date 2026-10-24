@@ -1,0 +1,17 @@
+{
+  "name": "fconline-event-rewards",
+  "plugins": [
+    {
+      "name": "fconline-event-rewards",
+      "source": {
+        "source": "local",
+        "path": "./plugins/fconline-event-rewards"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
