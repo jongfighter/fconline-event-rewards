@@ -1,0 +1,4 @@
+interface:
+  display_name: "FC 온라인 웹 이벤트 보상"
+  short_description: "이벤트 현황 갱신 후 웹 보상과 멤버십 수령"
+  default_prompt: "Use $fconline-event-rewards to refresh event progress and collect eligible FC Online web rewards."

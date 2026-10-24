@@ -1,0 +1,14 @@
+{
+  "name": "fconline-event-rewards",
+  "description": "FC Online official web-event, web-shop, and membership rewards.",
+  "owner": {
+    "name": "jongfighter"
+  },
+  "plugins": [
+    {
+      "name": "fconline-event-rewards",
+      "source": "./plugins/fconline-event-rewards",
+      "description": "Check FC Online event progress and collect eligible web rewards, including event-only coin minigames."
+    }
+  ]
+}
