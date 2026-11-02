@@ -1,4 +1,4 @@
 interface:
   display_name: "FC 온라인 아이템 정리와 감독모드"
-  short_description: "게임 화면에서 보관함 수령·박스 개봉·재료 교환 후 감독모드 실행"
+  short_description: "게임 화면에서 보관함 수령·박스 개봉·재료 교환 후 감독모드 실행 (운영정책 위험)"
   default_prompt: "Use $fconline-items-manager to collect game inventory, open boxes and cards, spend exchange materials, and start manager mode if requested."

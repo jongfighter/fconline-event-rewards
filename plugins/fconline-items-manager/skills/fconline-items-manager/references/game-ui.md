@@ -6,7 +6,7 @@ Windows에서 실행 중인 제목 `FC ONLINE` 창을 찾는다. 여러 모니�
 
 듀얼 모니터에서는 게임이 실제로 놓인 창을 캡처해 그 창 이미지 안의 좌표로 조작한다. 캡처 결과의 `client_size`는 실제 크기, `coordinate_width`는 입력 좌표 기준(1600)을 나타낸다. 전체 모니터/데스크톱 좌표, `full_image` 픽셀 좌표, 정규화된 캡처 좌표를 섞지 않는다. 매번 최신 캡처의 버튼 위치를 사용한다. 입력 전 `game_foreground`와 `elevated` 상태를 각각 확인하고, 하나만 보고 권한 문제라고 단정하지 않는다.
 
-포함된 `scripts/game_ui.py`는 Python, Pillow와 Windows Win32 API를 사용한다. 네트워크·게임 메모리·패킷 조작은 하지 않는다. 기본 `capture`는 게임을 전경으로 가져오거나 입력하지 않는다. 스킬은 현재 사용자 프로필 아래 두고 읽기·실행에 관리자 권한이나 불필요한 ACL 확대를 요구하지 않는다. 출력은 사용자 작업 폴더에 저장한다.
+포함된 `scripts/game_ui.py`는 Python, Pillow와 Windows Win32 API를 사용한다. 네트워크·게임 메모리·패킷 조작은 하지 않는다. 기본 `capture`는 게임을 전경으로 가져오거나 입력하지 않는다. 스킬은 현재 사용자 프로필 아래 두고 읽기·실행에 관리자 권한이나 불필요한 ACL 확대를 요구하지 않는다. 기본 출력 위치는 `~/FCOnline/skill-ui-captures`이며 `--output-dir`로 바꿀 수 있다. 캡처는 게임 창 영역의 화면을 그대로 잘라내므로 그 위에 겹친 다른 창도 찍힐 수 있다.
 
 `$uiScript`에는 이 스킬 폴더(SKILL.md가 있는 폴더, 호스트가 알려 주는 스킬 기준 디렉터리)의 `scripts\game_ui.py` 절대 경로를 넣는다. 캡처 이미지는 `--output-dir`(기본 `~/FCOnline/skill-ui-captures`)에 저장되며 닉네임·보유 재화 등 계정 정보가 보일 수 있으므로 저장 위치를 알리고 공유 전에 확인하도록 안내한다.
 
@@ -16,7 +16,9 @@ python $uiScript '{"action":"capture"}'
 python $uiScript '{"action":"focus"}'
 ```
 
-각 호출은 JSON 상태와 **이번 호출에서 생성한** 이미지 경로를 반환한다. 성공 여부와 이미지 경로를 확인한 다음 `view_image`로 열어 판단한다. 실패 후 예전 `game.png`를 보여 주며 새 작업이 성공했다고 해석하지 않는다.
+Windows PowerShell 5.1은 인자의 큰따옴표를 지워 `Expecting property name enclosed in double quotes` 오류가 난다. 그때는 JSON의 큰따옴표를 `\"`로 이스케이프한다(`python $uiScript '{\"action\":\"capture\"}'`). PowerShell 7.3 이상에서는 위 형태가 그대로 동작하므로 이스케이프하지 않는다.
+
+각 호출은 JSON 상태와 **이번 호출에서 생성한** 이미지 경로를 반환한다. 성공 여부와 이미지 경로를 확인한 다음 호스트의 이미지 보기 도구(예: Codex `view_image`)로 열어 판단한다. 실패 후 예전 `game.png`를 보여 주며 새 작업이 성공했다고 해석하지 않는다.
 
 좌표는 이미지 폭 1600 기준이다. 예를 들어 새 캡처에서 관찰한 위치를 `move`/`click`의 `x`,`y`에 넣는다. 아래 값은 호출 형식 예시이지 상품 위치가 아니다.
 
