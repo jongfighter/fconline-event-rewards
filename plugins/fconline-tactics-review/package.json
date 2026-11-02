@@ -1,0 +1,34 @@
+{
+  "name": "opencode-fconline-tactics-review",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that registers the fconline-tactics-review skill for reviewing FC Online squads and tactics and writing an HTML improvement board.",
+  "type": "module",
+  "license": "MIT",
+  "author": "jongfighter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jongfighter/fconline-event-rewards.git",
+    "directory": "plugins/fconline-tactics-review"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "FC Online",
+    "tactics"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "skills"
+  ],
+  "peerDependencies": {
+    "@opencode/plugin": "^2.2.5"
+  },
+  "peerDependenciesMeta": {
+    "@opencode/plugin": {
+      "optional": true
+    }
+  }
+}

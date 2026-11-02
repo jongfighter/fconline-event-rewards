@@ -1,0 +1,4 @@
+interface:
+  display_name: "FC 온라인 전술 분석"
+  short_description: "현재 스쿼드와 전술을 확인해 게임 화면 형태의 HTML 개선안 작성"
+  default_prompt: "Use $fconline-tactics-review to inspect current tactics and create an HTML comparison with improvements."

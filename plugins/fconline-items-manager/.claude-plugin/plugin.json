@@ -1,0 +1,15 @@
+{
+  "name": "fconline-items-manager",
+  "version": "0.1.0",
+  "description": "Handle FC Online in-game inventory on the running game client: collect storage items, open boxes and cards, spend exchange materials, and start manager mode when asked. Sends mouse and keyboard input to the game window.",
+  "author": {
+    "name": "jongfighter"
+  },
+  "homepage": "https://github.com/jongfighter/fconline-event-rewards",
+  "repository": "https://github.com/jongfighter/fconline-event-rewards",
+  "license": "MIT",
+  "keywords": [
+    "FC Online",
+    "inventory"
+  ]
+}

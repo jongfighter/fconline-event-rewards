@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "fconline-tactics-review",
+  "version": "0.1.0",
+  "description": "Inspect the current FC Online squad, team tactics, individual instructions, and coaches, then write an HTML comparison page with improvements.",
+  "author": {
+    "name": "jongfighter"
+  },
+  "homepage": "https://github.com/jongfighter/fconline-event-rewards",
+  "repository": "https://github.com/jongfighter/fconline-event-rewards",
+  "license": "MIT",
+  "keywords": [
+    "FC Online",
+    "tactics",
+    "Codex",
+    "Claude Code",
+    "OpenCode"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "FC Online Tactics Review",
+        "shortDescription": "Review squad and tactics and write an HTML improvement board.",
+        "longDescription": "Reads your current FC Online squad, team tactics, individual instructions, and coaches, diagnoses attack build-up, off-ball runs, and defensive transition problems, and writes an HTML board that compares the current setup with proposed changes. It uses the browser tools available in the host and does not change in-game settings unless you ask.",
+        "developerName": "jongfighter",
+        "category": "Productivity",
+        "defaultPrompt": [
+          "Use $fconline-tactics-review to inspect current tactics and create an HTML comparison with improvements."
+        ]
+      }
+    }
+  }
+}

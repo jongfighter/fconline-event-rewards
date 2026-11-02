@@ -1,11 +1,38 @@
 {
   "name": "fconline-event-rewards",
+  "interface": {
+    "displayName": "FC Online Skills"
+  },
   "plugins": [
     {
       "name": "fconline-event-rewards",
       "source": {
         "source": "local",
         "path": "./plugins/fconline-event-rewards"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "fconline-items-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/fconline-items-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "fconline-tactics-review",
+      "source": {
+        "source": "local",
+        "path": "./plugins/fconline-tactics-review"
       },
       "policy": {
         "installation": "AVAILABLE",

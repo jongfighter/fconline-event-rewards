@@ -1,0 +1,15 @@
+{
+  "name": "fconline-tactics-review",
+  "version": "0.1.0",
+  "description": "Inspect the current FC Online squad, team tactics, individual instructions, and coaches, then write an HTML comparison page with improvements.",
+  "author": {
+    "name": "jongfighter"
+  },
+  "homepage": "https://github.com/jongfighter/fconline-event-rewards",
+  "repository": "https://github.com/jongfighter/fconline-event-rewards",
+  "license": "MIT",
+  "keywords": [
+    "FC Online",
+    "tactics"
+  ]
+}

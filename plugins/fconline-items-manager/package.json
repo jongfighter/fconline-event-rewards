@@ -1,0 +1,34 @@
+{
+  "name": "opencode-fconline-items-manager",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that registers the fconline-items-manager skill for handling FC Online in-game inventory on the running game client.",
+  "type": "module",
+  "license": "MIT",
+  "author": "jongfighter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jongfighter/fconline-event-rewards.git",
+    "directory": "plugins/fconline-items-manager"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "FC Online",
+    "inventory"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "skills"
+  ],
+  "peerDependencies": {
+    "@opencode/plugin": "^2.2.5"
+  },
+  "peerDependenciesMeta": {
+    "@opencode/plugin": {
+      "optional": true
+    }
+  }
+}

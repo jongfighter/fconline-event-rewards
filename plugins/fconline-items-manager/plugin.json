@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "fconline-items-manager",
+  "version": "0.1.0",
+  "description": "Handle FC Online in-game inventory on the running game client: collect storage items, open boxes and cards, spend exchange materials, and start manager mode when asked. Sends mouse and keyboard input to the game window.",
+  "author": {
+    "name": "jongfighter"
+  },
+  "homepage": "https://github.com/jongfighter/fconline-event-rewards",
+  "repository": "https://github.com/jongfighter/fconline-event-rewards",
+  "license": "MIT",
+  "keywords": [
+    "FC Online",
+    "inventory",
+    "Codex",
+    "Claude Code",
+    "OpenCode"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "FC Online Items Manager",
+        "shortDescription": "Collect inventory items, open boxes, and spend exchange materials in the game.",
+        "longDescription": "Works on the running FC ONLINE game client: collects storage items, opens boxes and cards when you ask, spends exchange materials, converts them to BP, and starts official-match manager mode when requested. It captures the game window and sends mouse and keyboard input to it, which may violate the Nexon operation policy on automated programs. You are responsible for any account action that results. Install it only if you accept that risk.",
+        "developerName": "jongfighter",
+        "category": "Productivity",
+        "defaultPrompt": [
+          "Use $fconline-items-manager to collect game inventory, open boxes and cards, spend exchange materials, and start manager mode if requested."
+        ]
+      }
+    }
+  }
+}
