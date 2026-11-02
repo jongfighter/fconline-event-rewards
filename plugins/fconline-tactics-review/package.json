@@ -1,6 +1,6 @@
 {
   "name": "opencode-fconline-tactics-review",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "OpenCode plugin that registers the fconline-tactics-review skill for reviewing FC Online squads and tactics and writing an HTML improvement board.",
   "type": "module",
   "license": "MIT",
@@ -23,12 +23,7 @@
     "src",
     "skills"
   ],
-  "peerDependencies": {
+  "devDependencies": {
     "@opencode/plugin": "^2.2.5"
-  },
-  "peerDependenciesMeta": {
-    "@opencode/plugin": {
-      "optional": true
-    }
   }
 }

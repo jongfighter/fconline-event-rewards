@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fconline-event-rewards",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Collect and verify FC Online official web-event, web-shop, and membership rewards, including event-only coin minigames.",
   "author": {
     "name": "jongfighter"

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fconline-items-manager",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Handle FC Online in-game inventory on the running game client: collect storage items, open boxes and cards, spend exchange materials, and start manager mode when asked. Sends mouse and keyboard input to the game window, which may violate the Nexon operation policy on automated programs. Unofficial.",
   "author": {
     "name": "jongfighter"

@@ -1,6 +1,6 @@
 {
   "name": "opencode-fconline-items-manager",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "OpenCode plugin that registers the fconline-items-manager skill for handling FC Online in-game inventory on the running game client. The skill sends mouse and keyboard input to the game window, which may violate the Nexon operation policy on automated programs.",
   "type": "module",
   "license": "MIT",
@@ -23,12 +23,7 @@
     "src",
     "skills"
   ],
-  "peerDependencies": {
+  "devDependencies": {
     "@opencode/plugin": "^2.2.5"
-  },
-  "peerDependenciesMeta": {
-    "@opencode/plugin": {
-      "optional": true
-    }
   }
 }
