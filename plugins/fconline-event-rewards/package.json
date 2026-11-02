@@ -1,0 +1,34 @@
+{
+  "name": "opencode-fconline-event-rewards",
+  "version": "0.2.0",
+  "description": "OpenCode plugin that registers the fconline-event-rewards skill for collecting and verifying FC Online official web-event, web-shop, and membership rewards.",
+  "type": "module",
+  "license": "MIT",
+  "author": "jongfighter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jongfighter/fconline-event-rewards.git",
+    "directory": "plugins/fconline-event-rewards"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "FC Online",
+    "rewards"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "skills"
+  ],
+  "peerDependencies": {
+    "@opencode/plugin": "^2.2.5"
+  },
+  "peerDependenciesMeta": {
+    "@opencode/plugin": {
+      "optional": true
+    }
+  }
+}

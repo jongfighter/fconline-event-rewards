@@ -1,11 +1,12 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fconline-event-rewards",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Collect and verify FC Online official web-event, web-shop, and membership rewards, including event-only coin minigames.",
   "author": {
     "name": "jongfighter"
   },
+  "homepage": "https://github.com/jongfighter/fconline-event-rewards",
   "repository": "https://github.com/jongfighter/fconline-event-rewards",
   "license": "MIT",
   "keywords": [
@@ -14,14 +15,15 @@
     "rewards",
     "membership",
     "Codex",
-    "Claude Code"
+    "Claude Code",
+    "OpenCode"
   ],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "FC Online Event Rewards",
         "shortDescription": "Check event status and collect eligible web rewards.",
-        "longDescription": "Refresh FC Online event progress, research quiz and visit missions, collect eligible website rewards, and process event-only coin minigames. Uses the browser and web search tools available in the host; it does not provide Nexon authentication.",
+        "longDescription": "Refresh FC Online event progress, research quiz and visit missions, collect eligible website rewards, and process event-only coin minigames. Uses the browser and web search tools available in the host; it does not provide Nexon authentication. If the Nexon ID or password is not filled in, it asks you to type it yourself in the browser.",
         "developerName": "jongfighter",
         "category": "Productivity",
         "defaultPrompt": [
